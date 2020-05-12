@@ -32,12 +32,12 @@
           startEvents: mouseenter; 
           dur: 600;"
         animation__mouseleave="
-          property: components.material.material.color;
+          property: components.material.material.color; 
           type: color; 
           to: green; 
           startEvents: mouseleave; 
           dur: 600;"
-          > 
+          animation__2="property: position; to: 1 8 -10; dur: 2000; easing: linear; loop: true"> 
       </a-box>
       <a-box id="myOtherBox" 
         position="7 2 -2" 
@@ -47,11 +47,6 @@
         depth="1" 
         material="src: #wood"
         shadow
-        animation="
-        position; 
-        to: 1 8 -10; 
-        dur: 2000; easing: linear; 
-        loop: true"
         animation__mouseenter="
           property: components.material.material.color; 
           type: color; 
