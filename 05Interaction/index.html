@@ -28,7 +28,7 @@
         animation__mouseenter="
           property: components.material.material.color; 
           type: color; 
-          to: red; 
+          to: purple; 
           startEvents: mouseenter; 
           dur: 600;"
         animation__mouseleave="
@@ -39,13 +39,25 @@
           dur: 600;">  
       </a-box>
       <a-box id="myOtherBox" 
-        position="3 2 -4" 
+        position="7 2 -2" 
         rotation="0 45 0" 
         width="3" 
         height="1" 
         depth="1" 
         material="src: #wood"
-        shadow>  
+        shadow
+        animation__mouseenter="
+          property: components.material.material.color; 
+          type: color; 
+          to: purple; 
+          startEvents: mouseenter; 
+          dur: 600;"
+        animation__mouseleave="
+          property: components.material.material.color; 
+          type: color; 
+          to: green; 
+          startEvents: mouseleave; 
+          dur: 600;">  >  
       </a-box>
       <a-plane id="ground"
         position="0 0 -4" 
